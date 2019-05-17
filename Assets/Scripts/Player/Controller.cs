@@ -75,7 +75,6 @@ namespace Player {
             float speed;
             GetInput(out speed);
             
-        
             // always move along the camera forward as it is the direction that it being aimed at
             Vector3 desiredMove = m_Jumping ? m_AirMoveCache : m_CameraAnchor.forward * m_Input.y + m_CameraAnchor.right * m_Input.x;
 
